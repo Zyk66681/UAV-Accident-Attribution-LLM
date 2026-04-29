@@ -36,6 +36,16 @@
     * 地面损害程度（4类：无损害、轻微损害、中度损害、严重损害）
     * 伤亡人数（3类区间化编码：0人、1-3人、4人及以上）
 
+## 📂 数据与说明文档 (Data & Documentation)
+
+为了方便复现和后续研究，本项目补充开源了以下关键说明文档和数据分布图：
+
+* 📖 **[数据字典 (Data Dictionary)](./docs/Data_Dictionary.md)**：详细解释了数据集中各个字段的含义、数据类型及预处理逻辑。
+* 🏷️ **[标注与分类指南 (Annotation Guidelines)](./docs/Annotation_Guidelines.md)**：提供了无人机事故类型、地面损害程度的严格判定边界及真实文本案例。
+* 📊 **数据分布可视化**：
+  * [事故类型分布统计](./images/accident_type_distribution.png)
+  * [全球事故地理分布](./images/geographic_distribution.png)
+
 ## 💻 代码说明 (Code Description)
 
 **`shap_robustness_stability.py`** 实现了论文中提出的**归因特征可解释性与鲁棒性验证机制**。
